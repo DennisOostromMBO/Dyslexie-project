@@ -4,27 +4,15 @@
     border-radius: 20px;
 }
 
-body {
-  background: linear-gradient(135deg, #f1c40f, #e74c3c, #3498db, #2ecc71);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-  
-}
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
- 
-    50% {
-        background-position: 100% 50%;
-    }
- 
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
+  body {
+    background-image: url("IMG/achtergrond.jpg");
+    color: wheat;
+  }
+
+
+
 
 .banner {
     background-color: #000;
