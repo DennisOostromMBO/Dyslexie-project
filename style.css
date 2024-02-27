@@ -5,10 +5,11 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15seaseinfinite;
-    height: 100vh;
+  background: linear-gradient(135deg, #f1c40f, #e74c3c, #3498db, #2ecc71);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  
 }
 
 @keyframes gradient {
@@ -55,6 +56,7 @@ body {
     text-decoration: none;
     color: #fff;
     padding: 0.5rem 1rem; /* Pas de gewenste padding aan */
+    box-sizing: border-box; /* Voeg deze regel toe */
   }
   
   nav ul li a:hover {
