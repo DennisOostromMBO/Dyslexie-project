@@ -1,8 +1,10 @@
-body {
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-size: 40px; /* Pas deze waarde aan voor de gewenste grootte */
+    background-image: url("IMG/achtergrond.jpg");
+    color: black;
 }
