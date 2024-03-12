@@ -51,3 +51,8 @@
     color: #0ae;
   }
 
+  .submitButton{
+    border-radius: 50px;
+    width: 100px;
+  }
+
