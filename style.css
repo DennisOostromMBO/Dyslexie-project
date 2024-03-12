@@ -11,6 +11,12 @@
   body {
     background-image: url("IMG/achtergrond.jpg");
     color: black;
+    font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    .w3-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
 
