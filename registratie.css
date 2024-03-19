@@ -1,7 +1,6 @@
 body {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+ 
+
     height: 100vh;
 }
 
@@ -12,7 +11,22 @@ body {
     color: white;
 }
 
- 
 input{
     border-radius: 50px;
+}
+
+.Inloggen{
+height: 100vh;
+margin: 0;
+display: flex;
+justify-content: center;
+font-family: 'Rockwell';
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
 }
