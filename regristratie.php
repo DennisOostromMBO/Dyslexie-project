@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $wachtwoord= $_POST['wachtwoord'];
 
-    $conn = new mysqli('localhost', 'root', 'dyslexie');
+    $conn = new mysqli('localhost', 'root', '', 'dyslexie');
     if ($conn->connect_error){
         die('Connection Failed  : '.$con->connect_error);
     } else {
