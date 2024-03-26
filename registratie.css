@@ -13,6 +13,7 @@ body {
 
 input{
     border-radius: 50px;
+    width: 200px;
 }
 
 .Inloggen{
@@ -30,3 +31,5 @@ font-family: 'Rockwell';
     transform: translate(-50%, -50%);
     padding: 20px;
 }
+
+
