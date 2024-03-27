@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Vragen pagina</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,85 +8,88 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 <body>
-  <div class="banner">
+<div class="banner">
     <nav>
-      <ul>
-          <li><a href="homepagina.html">Home</a></li>
-          <li><a href="informatie.html">Informatie</a></li>
-          <li><a href="registratie.html">Vragenlijst</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
-  </div>
-                  <br> <br>
-                <h2 class="vragen">1. Heb je moeite met lezen?</h2>
-                <input type="radio" id="vraag1-ja" name="vraag1" value="slecht">
-                <label for="vraag1-ja">Ja</label><br>
-                <input type="radio" id="vraag1-nee" name="vraag1" value="goed">
-                <label for="vraag1-nee">Nee</label><br>
+        <ul>
+            <li><a href="homepagina.html">Home</a></li>
+            <li><a href="informatie.html">Informatie</a></li>
+            <li><a href="registratie.html">Vragenlijst</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<br><br>
+<form action="vragenlijst.php" method="post">
+    <h2 class="vragen">1. Heb je moeite met lezen?</h2>
+    <input type="radio" id="vraag1-ja" name="vraag1" value="slecht" required>
+    <label for="vraag1-ja">Ja</label><br>
+    <input type="radio" id="vraag1-nee" name="vraag1" value="goed" required>
+    <label for="vraag1-nee">Nee</label><br>
 
-                <h2 class="vragen">2. Zie je letters door elkaar?</h2>
-                <input type="radio" id="vraag2-ja" name="vraag2" value="slecht">
-                <label for="vraag2-ja">Ja</label><br>
-                <input type="radio" id="vraag2-nee" name="vraag2" value="goed">
-                <label for="vraag2-nee">Nee</label><br>
+    
+<h2 class="vragen">2. Zie je letters door elkaar? </h2>
+<input type="radio" id="vraag2-ja" name="vraag2" value="slecht" required>
+<label for="vraag2-ja">Ja</label><br>
+<input type="radio" id="vraag2-nee" name="vraag2" value="goed" required>
+<label for="vraag2-nee">Nee</label><br>
 
-                <h2 class="vragen">3. Heeft een familielid dyslexie?</h2>
-                <input type="radio" id="vraag3-ja" name="vraag3" value="slecht">
-                <label for="vraag3-ja">Ja</label><br>
-                <input type="radio" id="vraag3-nee" name="vraag3" value="goed">
-                <label for="vraag3-nee">Nee</label><br>
-                <input type="radio" id="vraag3-weet-ik-niet" name="vraag3" value="slecht">
-                <label for="vraag3-weet-ik-niet">Weet ik niet</label><br>
+<h2 class="vragen">3. Heeft een familielid dyslexie?</h2>
+<input type="radio" id="vraag3-ja" name="vraag3" value="slecht" required>
+<label for="vraag3-ja">Ja</label><br>
+<input type="radio" id="vraag3-nee" name="vraag3" value="goed" required>
+<label for="vraag3-nee">Nee</label><br>
+<input type="radio" id="vraag3-weet-ik-niet" name="vraag3" value="slecht" required>
+<label for="vraag3-weet-ik-niet">Weet ik niet</label><br>
 
-                <h2 class="vragen">4. Schrijf je dingen op zoals het uitgesproken wordt?</h2>
-                <input type="radio" id="vraag4-ja" name="vraag4" value="slecht">
-                <label for="vraag4-ja">Ja</label><br>
-                <input type="radio" id="vraag4-nee" name="vraag4" value="goed">
-                <label for="vraag4-nee">Nee</label><br>
+<h2 class="vragen">4. Schrijf je dingen op zoals het uitgesproken wordt?</h2>
+<input type="radio" id="vraag4-ja" name="vraag4" value="slecht" required>
+<label for="vraag4-ja">Ja</label><br>
+<input type="radio" id="vraag4-nee" name="vraag4" value="goed" required>
+<label for="vraag4-nee">Nee</label><br>
 
-                <h2 class="vragen">5. Heb je moeite met het leren van vreemde talen?</h2>
-                <input type="radio" id="vraag5-ja" name="vraag5" value="slecht">
-                <label for="vraag5-ja">Ja</label><br>
-                <input type="radio" id="vraag5-nee" name="vraag5" value="goed">
-                <label for="vraag5-nee">Nee</label><br>
+<h2 class="vragen">5. Heb je moeite met het leren van vreemde talen?</h2>
+<input type="radio" id="vraag5-ja" name="vraag5" value="slecht" required>
+<label for="vraag5-ja">Ja</label><br>
+<input type="radio" id="vraag5-nee" name="vraag5" value="goed" required>
+<label for="vraag5-nee">Nee</label><br>
 
-                <h2 class="vragen">6. Heb je moeite met het leren van woorden voor toetsen?</h2>
-                <input type="radio" id="vraag6-ja" name="vraag6" value="slecht">
-                <label for="vraag6-ja">Ja</label><br>
-                <input type="radio" id="vraag6-nee" name="vraag6" value="goed">
-                <label for="vraag6-nee">Nee</label><br>
+<h2 class="vragen">6. Heb je moeite met het leren van woorden voor toetsen?</h2>
+<input type="radio" id="vraag6-ja" name="vraag6" value="slecht" required>
+<label for="vraag6-ja">Ja</label><br>
+<input type="radio" id="vraag6-nee" name="vraag6" value="goed" required>
+<label for="vraag6-nee">Nee</label><br>
 
-                <h2 class="vragen">7. Is je leessnelheid traag?</h2>
-                <input type="radio" id="vraag7-ja" name="vraag7" value="slecht">
-                <label for="vraag7-ja">Ja</label><br>
-                <input type="radio" id="vraag7-nee" name="vraag7" value="goed">
-                <label for="vraag7-nee">Nee</label><br>
+<h2 class="vragen">7. Is je leessnelheid traag?</h2>
+<input type="radio" id="vraag7-ja" name="vraag7" value="slecht" required>
+<label for="vraag7-ja">Ja</label><br>
+<input type="radio" id="vraag7-nee" name="vraag7" value="goed" required>
+<label for="vraag7-nee">Nee</label><br>
 
-                <h2 class="vragen">8. Heb je moeite met de spellingsregels?</h2>
-                <input type="radio" id="vraag8-ja" name="vraag8" value="slecht">
-                <label for="vraag8-ja">Ja</label><br>
-                <input type="radio" id="vraag8-nee" name="vraag8" value="goed">
-                <label for="vraag8-nee">Nee</label><br>
+<h2 class="vragen">8. Heb je moeite met de spellingsregels?</h2>
+<input type="radio" id="vraag8-ja" name="vraag8" value="slecht" required>
+<label for="vraag8-ja">Ja</label><br>
+<input type="radio" id="vraag8-nee" name="vraag8" value="goed" required>
+<label for="vraag8-nee">Nee</label><br>
 
-                <h2 class="vragen">9. Bleef je op de basisschool achter met AVI-lezen vergeleken met je klasgenoten?</h2>
-                <input type="radio" id="vraag9-ja" name="vraag9" value="slecht">
-                <label for="vraag9-ja">Ja</label><br>
-                <input type="radio" id="vraag9-nee" name="vraag9" value="goed">
-                <label for="vraag9-nee">Nee</label><br>
+<h2 class="vragen">9. Bleef je op de basisschool achter met AVI-lezen vergeleken met je klasgenoten?</h2>
+<input type="radio" id="vraag9-ja" name="vraag9" value="slecht" required>
+<label for="vraag9-ja">Ja</label><br>
+<input type="radio" id="vraag9-nee" name="vraag9" value="goed" required>
+<label for="vraag9-nee">Nee</label><br>
 
-                <h2 class="vragen">10. Heb je moeite om op woorden te komen?</h2>
-                <input type="radio" id="vraag10-ja" name="vraag10" value="slecht">
-                <label for="vraag10-ja">Ja</label><br>
-                <input type="radio" id="vraag10-nee" name="vraag10" value="goed">
-                <label for="vraag10-nee">Nee</label><br>
+<h2 class="vragen">10. Heb je moeite om op woorden te komen?</h2>
+<input type="radio" id="vraag10-ja" name="vraag10" value="slecht" required>
+<label for="vraag10-ja">Ja</label><br>
+<input type="radio" id="vraag10-nee" name="vraag10" value="goed" required>
+<label for="vraag10-nee">Nee</label><br>
 
-            
-
-                <br>
-                <button class="submitButton">Versturen</button>
-            </form>
+    <br>
+    <button class="submitButton">Versturen</button>
+</form>
 </body>
 </html>
+
+
+
