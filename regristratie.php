@@ -13,9 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conn->prepare("INSERT INTO regristratie(voornaam, achternaam, email, wachtwoord) VALUES(?, ?, ?, ?)");
         $stmt->bind_param("ssss", $voornaam, $achternaam, $email, $wachtwoord);
         $stmt->execute();
-        echo "Registratie gelukt!";
         $stmt->close();
         $conn->close();
     }
 }
+
+
 ?>
+
+<script>window.location.href = 'vragenlijst.html';</script>
