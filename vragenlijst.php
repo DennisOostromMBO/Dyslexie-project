@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <h1>Dyslexie Uitslag</h1>
 <p><?php echo $message; ?></p>
+<a href="homepagina.html">Terug naar homepagina</a>
 
 <?php } else { ?>
     <p>No data submitted.</p>
