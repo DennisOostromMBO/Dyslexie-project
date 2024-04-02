@@ -28,9 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':vraag10', $_POST['vraag10']);
 
         $ja_count = 0;
+        $beantwoorde_vragen = array();
         for ($i = 1; $i <= 10; $i++) {
             if ($_POST["vraag$i"] == "slecht") {
                 $ja_count++;
+                $beantwoorde_vragen[] = "Vraag $i: Slecht";
+            } else {
+                $beantwoorde_vragen[] = "Vraag $i: Goed";
             }
         }
         $dyslexia_result = ($ja_count >= 6) ? 'yes' : 'no';
@@ -40,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
 
         $message = ($dyslexia_result == 'yes') ? "Gebasseerd op je antwoorden heeft u waarschijnlijk dyslexie, raadpleeg een specialist voor verdere evaluatie." : "Gebasseerd op je antwoorden heeft u hoogstwaarschijnlijk geen dyslexie";
+        $message .= "<br><br><strong>Beantwoorde vragen:</strong><br>" . implode("<br>", $beantwoorde_vragen);
     } catch(PDOException $e) {
         $message = "Error: " . $e->getMessage();
     }
@@ -52,5 +57,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php } else { ?>
     <p>No data submitted.</p>
 <?php } ?>
-</body>
-</html>
