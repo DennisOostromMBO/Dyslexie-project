@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         $stmt->execute();
 
-        $message = ($dyslexia_result == 'yes') ? "Gebasseerd op je antwoorden heeft u waarschijnlijk dyslexie, raadpleeg een specialist voor verdere evaluatie." : "Gebasseerd op je antwoorden heeft u hoogstwaarschijnlijk geen dyslexie";
+        $message = ($dyslexia_result == 'yes') ? "Gebasseerd op uw antwoorden heeft u waarschijnlijk dyslexie, raadpleeg een specialist voor verdere evaluatie." : "Gebasseerd op uw antwoorden heeft u hoogstwaarschijnlijk geen dyslexie";
         $message .= "<br><br><strong>Beantwoorde vragen:</strong><br>" . implode("<br>", $beantwoorde_vragen);
     } catch(PDOException $e) {
         $message = "Error: " . $e->getMessage();
