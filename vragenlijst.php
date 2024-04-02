@@ -32,9 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         for ($i = 1; $i <= 10; $i++) {
             if ($_POST["vraag$i"] == "slecht") {
                 $ja_count++;
-                $beantwoorde_vragen[] = "Vraag $i: Slecht";
+                $beantwoorde_vragen[] = "Vraag $i: Ja";
             } else {
-                $beantwoorde_vragen[] = "Vraag $i: Goed";
+                $beantwoorde_vragen[] = "Vraag $i: Nee";
             }
         }
         $dyslexia_result = ($ja_count >= 6) ? 'yes' : 'no';
