@@ -48,6 +48,8 @@
         echo "<p>Achternaam: $achternaam</p>";
         echo "<p>Email: $email</p>";
         echo "<p>Wachtwoord: " . str_repeat('*', strlen($wachtwoord)) . "</p>";
+        echo "<br>";
+        echo "Een ogenblik geduld... U wordt doorgestuurd naar de vragenlijst.";
     }
     ?>
 </div>
